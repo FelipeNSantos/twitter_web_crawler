@@ -22,6 +22,6 @@ Requisição dos 100 tweets mais recentes em português utilizando o termo de bu
 
 Análise de sentimentos dos tweets (o algoritmo do Sentipt internamente inclui tokenização, treino com um corpus etiquetado e classificação). Plotagem do grafico de resultado em estilo "donut", adequado a esse tipo de análise, inserido em uma sub-página html a ser inserida na página de resultado após processamento e renderização. Abertura da página de resultado.
 
-##TODO
+## TODO
 
 Aperfeiçoamento do frontend, ainda muito simplório, para algo melhor em termos de storytelling, citando amostras de tweets. Aperfeiçoamento do Sentipt, que se mostra pouco sensível, com alta porcentagem de classificação neutra mesmo sobre termos que envolvem polêmica.
