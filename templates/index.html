@@ -1,0 +1,35 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}
+{% endblock %}
+
+{% block head %}
+<style>div.a {text-align: center;}</style>
+<div class="a">
+<h1> <tittle> Twitter Crawler </tittle></h1>
+
+</div>
+{% endblock %}
+
+{% block content %}
+<style>
+    div.a {text-align: center;}
+</style>
+<div class="a">
+   
+<div class='container'>
+    <div class='jumbotron' style='background-color:rgb(255, 255, 255)'>
+
+        <H2> Pesquisar palavras-chave: </h2>
+    </br>
+    </div>
+
+</div>
+<form  method="POST" action="{{ url_for('index')}}">
+    <input name="t_query" type="text">
+    <button type="submit" class="btn btn-large btn-primary"> Enviar</button>
+
+</form>
+
+
+</div>
+{% endblock %}
