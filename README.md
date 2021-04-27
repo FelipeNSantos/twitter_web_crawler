@@ -1,4 +1,4 @@
-# Twitter Web Crawler
+# Twitter Web Crawler and Sentiment Analysis
 
 Análise de Sentimentos usando a nova API 2.0 do Twitter, Flask, Jinja2, Pandas e Plotly.
 
