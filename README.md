@@ -24,6 +24,6 @@ Análise de sentimentos dos tweets (o algoritmo do Sentipt internamente inclui t
 
 ## TODO
 
-Aperfeiçoamento do frontend, ainda muito simplório, para algo melhor em termos de storytelling, citando amostras de tweets. Aperfeiçoamento do Sentipt, que se mostra pouco sensível, com altíssima porcentagem de classificação neutra. 
+Aperfeiçoamento do frontend, ainda muito simplório, para algo melhor em termos de storytelling, citando amostras de tweets. Aperfeiçoamento do Sentipt, que se mostra pouco sensível, com alta porcentagem de classificação neutra. 
 
 Testando provisoriamente o resultado apenas com positivos e negativos, para melhor legibilidade até o ajuste do modelo de classificação.
