@@ -7,6 +7,11 @@ div.a {text-align: center;}
 </style>
 <div class="a"><h1>Resultado (aguarde) {{t_query|safe}}</h1></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+<div class="a"><a href="javascript:void(0)" onClick="history.go(-1); return false;"><font size="6">Voltar</font></div>
+
+
+
 <p style="text-align:center">
     <center>{% include 'plot.html' %}</center></p>
 {% endblock %}
