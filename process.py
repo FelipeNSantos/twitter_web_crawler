@@ -7,7 +7,6 @@ import numpy as np
 import csv
 from sentipt.sentipt import SentimentIntensityAnalyzer
 import plotly.express as px
-import plotly
 
 def init_app(app):
     
@@ -30,12 +29,13 @@ def init_app(app):
             return df
 
         data = classificate(training_set)
-        labels = ["Negativos", "positivos", "Neutros"]
-        negativo = data["neg"].astype(np.float16).sum()
-        neutro = data["neu"].astype(np.float16).sum()
+        labels = ["Positivos","Negativos"] # ,"Neutros"]
+        cmap = pd.Series(["blue","red"])
+        #neutro = data["neu"].astype(np.float16).sum()
         positivo = data["pos"].astype(np.float16).sum()
-        values = [negativo, positivo, neutro]
-        fig = px.pie(data, values=values, names=labels, hole=.3)
+        negativo = data["neg"].astype(np.float16).sum()
+        values = [positivo, negativo]#, neutro]
+        fig = px.pie(data, values=values, names=labels, color=cmap, width=800, height=800,  hole=.3)
         fig.write_html('tcrawler/templates/plot.html', auto_open=False)
 
 
