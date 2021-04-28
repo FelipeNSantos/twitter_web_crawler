@@ -2,15 +2,11 @@
 {% block title %}Twitter Crawler{% endblock %}
 
 {% block head %}
-
 <style>
 div.a {text-align: center;}
 </style>
-<div class="a"><h1>Resultado (Aguarde)</h1></div>
+<div class="a"><h1>Resultado (aguarde) {{t_query|safe}}</h1></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-{% endblock %}
-
-
-{% block content %}
-    {% include 'plot.html' %}
+<p style="text-align:center">
+    <center>{% include 'plot.html' %}</center></p>
 {% endblock %}
