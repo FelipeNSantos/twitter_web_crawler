@@ -1,12 +1,18 @@
 {% extends "bootstrap/base.html" %}
 {% block title %}
+
 {% endblock %}
 
 {% block head %}
-<style>div.a {text-align: center;}</style>
-<div class="a">
-<h1> <tittle> Twitter Crawler </tittle></h1>
 
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+<style>div.a {text-align: center;}</style>
+
+<div class="a">
+    <img src="https://philosdata.com/wp-content/uploads/2021/04/shutterstock_1073953772.jpg">
+<h1> <tittle> Análise de Sentimentos (NLP) </tittle></h1> </br>
+<h2> Twitter Search (últimos 100 tweets) </h2> </br>
+<h4></h4> (Usando a nova API 2.0 do Twitter, Flask, Jinja2, Pandas, Sentipt (versão em português do script Vader) e Plotly)</h4>
 </div>
 {% endblock %}
 
@@ -18,18 +24,22 @@
    
 <div class='container'>
     <div class='jumbotron' style='background-color:rgb(255, 255, 255)'>
-
-        <H2> Pesquisar palavras-chave: </h2>
     </br>
+    <H2> Pesquisar palavras-chave: </h2> </br>
+
     </div>
 
 </div>
+</br>    
 <form  method="POST" action="{{ url_for('index')}}">
     <input name="t_query" type="text">
     <button type="submit" class="btn btn-large btn-primary"> Enviar</button>
 
-</form>
+</form></br>
+</br>
+<h4> <a href="https://github.com/FelipeNSantos/twitter_web_crawler"><h2><a href="https://github.com/FelipeNSantos/twitter_web_crawler"><strong>Repositório Github</strong></a></h4>
 
+</div> 
 
 </div>
 {% endblock %}
